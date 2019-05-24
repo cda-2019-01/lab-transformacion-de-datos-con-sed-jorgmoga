@@ -16,6 +16,5 @@ sed 's/,N,/,\N,/g' out.22 > out.23 ##Completo los N por \N
 sed 's/,N\r/,\\N\r/g' out.23 > out.24 ##Completo los N por \N
 ##sed 's/,N\r/,\\N\r/g' out.23 > out.24 ##Completo los N por \N
 cp out.24 data1.csv #
-cat data1.csv 
+cat data1.csv #
 rm out*
-#cat -A data1.csv
