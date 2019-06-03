@@ -14,7 +14,5 @@ sed 's/;\r/;\\N\r/g' out.20 > out.21 #agrego el null al final
 sed 's/;/,/g' out.21 > out.22 ##Remplazo los ; por ,
 sed 's/,N,/,\N,/g' out.22 > out.23 ##Completo los N por \N
 sed 's/,N\r/,\\N\r/g' out.23 > out.24 ##Completo los N por \N
-##sed 's/,N\r/,\\N\r/g' out.23 > out.24 ##Completo los N por \N
-cp out.24 data1.csv #
-cat data1.csv #
-rm out*
+cat out.24 # Imprimo archivo Final
+rm out* #Elimino archivos temporales
